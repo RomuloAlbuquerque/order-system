@@ -1,4 +1,4 @@
-package com.romulo.albuquerque.projetosistemapedidos;
+package com.romulo.albuquerque.ordersystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

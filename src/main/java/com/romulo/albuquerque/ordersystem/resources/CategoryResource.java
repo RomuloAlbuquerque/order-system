@@ -1,4 +1,4 @@
-package com.romulo.albuquerque.projetosistemapedidos.resources;
+package com.romulo.albuquerque.ordersystem.resources;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
