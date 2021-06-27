@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.romulo.albuquerque.ordersystem.domain.Category;
 import com.romulo.albuquerque.ordersystem.repositories.CategoryRepository;
+import com.romulo.albuquerque.ordersystem.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class CategoryService {
@@ -16,7 +17,8 @@ public class CategoryService {
 	
 	public Category find(Integer id){
 		Optional<Category> obj = repo.findById(id);
-		return obj.orElse(null);
+		return obj.orElseThrow(() -> new ObjectNotFoundException(
+				"Objeto não encontrado! id: " + ", Tipo: "+ Category.class.getName()));
 	}
 
 }
